@@ -2,7 +2,7 @@ const CLIENT_ID = '';
 const CLIENT_SECRET =
   '';
 
-const FILENAME_PREFIX = 'heartrate_samples';
+const FILENAME_PREFIX = 'bloodglucose_samples';
 const REDIRECTOR_BASE = 'fluapp://authorize';
 const OPEN_HUMANS_BASE = 'https://www.openhumans.org/';
 

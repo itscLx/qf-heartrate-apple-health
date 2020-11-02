@@ -3,7 +3,7 @@ import {Text, TouchableOpacity, View, ActivityIndicator} from 'react-native';
 import {connect} from 'react-redux';
 import {
   InitHealthKit,
-  GetHeartRateInfo,
+  GetBloodGlucose,
   resetHealthKitUploader,
 } from '../redux/actions/HealthKitActions';
 import {I18N} from '../common/config';
@@ -12,7 +12,7 @@ const HealthKitComponent = ({
   initialized,
   uploaded,
   InitHealthKit,
-  GetHeartRateInfo,
+  GetBloodGlucose,
   access_token,
   resetHealthKitUploaderAction,
   loading,
@@ -56,7 +56,7 @@ const HealthKitComponent = ({
       {!loading && initialized && !uploaded && (
         <TouchableOpacity
           onPress={() => {
-            GetHeartRateInfo(access_token);
+            GetBloodGlucose(access_token);
           }}
           style={{
             height: 296,
@@ -76,17 +76,17 @@ const HealthKitComponent = ({
 };
 
 const mapStateToProps = state => {
-  const {initialized, heartRateSamples, uploaded} = state.HealthKitReducer;
+  const {initialized, bloodglucoseSampels, uploaded} = state.HealthKitReducer;
   const {loading} = state.LoaderReducer;
   const {access_token} = state.AuthenticationReducer;
-  return {initialized, heartRateSamples, access_token, uploaded, loading};
+  return {initialized, bloodglucoseSampels, access_token, uploaded, loading};
 };
 
 export default connect(
   mapStateToProps,
   {
     InitHealthKit,
-    GetHeartRateInfo,
+    GetBloodGlucose,
     resetHealthKitUploaderAction: resetHealthKitUploader,
   },
 )(HealthKitComponent);

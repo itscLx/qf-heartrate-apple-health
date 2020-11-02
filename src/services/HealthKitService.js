@@ -3,7 +3,7 @@ import AppleHealthKit from '@gedankenstuecke/rn-apple-healthkit';
 const PERMS = AppleHealthKit.Constants.Permissions;
 const healtKitInitOptions = {
   permissions: {
-    read: [PERMS.HeartRate, PERMS.RestingHeartRate],
+    read: [PERMS.Bloodglucose, PERMS.Insulindelivery],
   },
 };
 
@@ -19,16 +19,16 @@ const initHealthKit = () => {
   });
 };
 
-const getHeartRateSamples = () => {
+const getBloodglucose = () => {
   let options = {
-    unit: 'bpm', // optional; default 'bpm'
+    unit: 'mg/dl', // optional; default 'mg/dl'
     startDate: new Date(2015, 4, 1).toISOString(), // required
     endDate: new Date().toISOString(), // optional; default now
     ascending: false, // optional; default false
     // limit: 10, // optional; default no limit
   };
   return new Promise((resolve, reject) => {
-    AppleHealthKit.getHeartRateSamples(options, (err, results) => {
+    AppleHealthKit.getBloodglucose(options, (err, results) => {
       if (err) {
         reject(err);
       }
@@ -46,16 +46,16 @@ const getHeartRateSamples = () => {
 };
 
 
-const getRestingHeartRate = () => {
+const getInsulindelivery = () => {
   let options = {
-    unit: 'bpm', // optional; default 'bpm'
+    unit: 'IE', // optional; default 'IE'
     startDate: new Date(2015, 4, 1).toISOString(), // required
     endDate: new Date().toISOString(), // optional; default now
     ascending: false, // optional; default false
     // limit: 10, // optional; default no limit
   };
   return new Promise((resolve, reject) => {
-    AppleHealthKit.getRestingHeartRate(options, (err, results) => {
+    AppleHealthKit.getInsulindelivery(options, (err, results) => {
       if (err) {
         reject(err);
       }
@@ -72,4 +72,4 @@ const getRestingHeartRate = () => {
   });
 };
 
-export {initHealthKit, getHeartRateSamples, getRestingHeartRate};
+export {initHealthKit, getBloodglucose, getInsulindelivery};
