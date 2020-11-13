@@ -1,6 +1,6 @@
-const CLIENT_ID = '';
+const CLIENT_ID = 'dlvoUxSuBMfJQggL9rfM8GZFQ1tdJ1rvvN5oON0m';
 const CLIENT_SECRET =
-  '';
+  'gJFeVi1LbwhJvJcentX3yN8kyLXqqpa364EfoZdQ4z5G8kiYzveqGSGcCNE6aAuWLOyI3fBNA14cTpTZzchWV1e7YH2OE5CfsPBzinTOZtBY1t9UXKjRkferBAvBrmRH';
 
 const FILENAME_PREFIX = 'bloodglucose_samples';
 const REDIRECTOR_BASE = 'fluapp://authorize';

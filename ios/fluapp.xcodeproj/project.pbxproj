@@ -46,7 +46,7 @@
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* fluappTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fluappTests.m; sourceTree = "<group>"; };
 		0FBB68B6E5ACDF9C2A6B144C /* libPods-fluapp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-fluapp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07F961A680F5B00A75B9A /* Quantified Flu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quantified Flu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07F961A680F5B00A75B9A /* OH Data Port.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OH Data Port.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = fluapp/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = fluapp/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -180,7 +180,7 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* Quantified Flu.app */,
+				13B07F961A680F5B00A75B9A /* OH Data Port.app */,
 				00E356EE1AD99517003FC87E /* fluappTests.xctest */,
 				2D02E47B1E0B4A5D006451C7 /* fluapp-tvOS.app */,
 				2D02E4901E0B4A5D006451C7 /* fluapp-tvOSTests.xctest */,
@@ -242,7 +242,7 @@
 			);
 			name = fluapp;
 			productName = fluapp;
-			productReference = 13B07F961A680F5B00A75B9A /* Quantified Flu.app */;
+			productReference = 13B07F961A680F5B00A75B9A /* OH Data Port.app */;
 			productType = "com.apple.product-type.application";
 		};
 		2D02E47A1E0B4A5D006451C7 /* fluapp-tvOS */ = {
@@ -298,7 +298,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						DevelopmentTeam = ;
+						DevelopmentTeam = R86RWRWYYD;
 						ProvisioningStyle = Automatic;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
@@ -607,7 +607,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quantified Flu.app/Quantified Flu";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OH Data Port.app/OH Data Port";
 			};
 			name = Debug;
 		};
@@ -627,7 +627,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quantified Flu.app/Quantified Flu";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OH Data Port.app/OH Data Port";
 			};
 			name = Release;
 		};
@@ -639,9 +639,9 @@
 				CODE_SIGN_ENTITLEMENTS = fluapp/fluapp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEAD_CODE_STRIPPING = NO;
-				DEVELOPMENT_TEAM = ;
+				DEVELOPMENT_TEAM = R86RWRWYYD;
 				INFOPLIST_FILE = fluapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -649,8 +649,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.quantifiedflu;
-				PRODUCT_NAME = "Quantified Flu";
+				PRODUCT_BUNDLE_IDENTIFIER = org.openhumans.www;
+				PRODUCT_NAME = "OH Data Port";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -664,8 +664,8 @@
 				CODE_SIGN_ENTITLEMENTS = fluapp/fluapp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = R86RWRWYYD;
 				INFOPLIST_FILE = fluapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -673,8 +673,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.quantifiedflu;
-				PRODUCT_NAME = "Quantified Flu";
+				PRODUCT_BUNDLE_IDENTIFIER = org.openhumans.www;
+				PRODUCT_NAME = "OH Data Port";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -817,8 +817,8 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "Apple Development: Bastian Greshake (X55LVZFH7Q)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development: Bastian Greshake (X55LVZFH7Q)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -871,8 +871,8 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "Apple Development: Bastian Greshake (X55LVZFH7Q)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Bastian Greshake (X55LVZFH7Q)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
